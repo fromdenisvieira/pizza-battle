@@ -15,8 +15,8 @@ class Login extends Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-        <Row type="flex" justify="center" align="middle">
-          <Col span={6}>
+        <Row type="flex" justify="center" align="middle" gutter={0} style={{'flex': 1}}>
+          <Col sm={9} md={8} lg={6} xl={6}>
             <Card title="PIZZA BATTLE">
               <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>
